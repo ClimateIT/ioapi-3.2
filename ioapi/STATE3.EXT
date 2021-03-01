@@ -171,24 +171,24 @@
         !!  Note that DOUBLE components are listed first, in order
         !!  to ensure appropriate (64-bit, usually) alignment.
 
-        COMMON  / BSTATE3 /                                             &
-     &          P_ALP3, P_BET3, P_GAM3,                                 &
-     &          XCENT3, YCENT3, XORIG3, YORIG3, XCELL3, YCELL3,         &
-     &          VGTYP3, VGTOP3, VGLVS3,                                 &
-     &          FINIT3, COUNT3, CURDATE, CURTIME, LOGDEV,               &
-     &          CDFID3, FTYPE3, SDATE3, STIME3, TSTEP3, MXREC3,         &
-     &          NVARS3, NLAYS3, NROWS3, NCOLS3, NTHIK3,                 &
-     &          TINDX3, NINDX3, SINDX3, LINDX3, WCNDX3, WRNDX3,         &
-     &          XINDX3, YINDX3, ZINDX3, DXNDX3, DYNDX3, VINDX3,         &
-     &          GDTYP3, VOLAT3, RONLY3,                                 &
-     &          BSIZE3, LDATE3, LTIME3, NDATE3, NTIME3, ILAST3,         &
-     &          VTYPE3,                                                 &
-     &          ILCNT3, NLIST3, IFRST3, ILIST3, BEGRC3, ENDRC3,         &
+        COMMON  / BSTATE3 /
+     &          P_ALP3, P_BET3, P_GAM3,
+     &          XCENT3, YCENT3, XORIG3, YORIG3, XCELL3, YCELL3,
+     &          VGTYP3, VGTOP3, VGLVS3,
+     &          FINIT3, COUNT3, CURDATE, CURTIME, LOGDEV,
+     &          CDFID3, FTYPE3, SDATE3, STIME3, TSTEP3, MXREC3,
+     &          NVARS3, NLAYS3, NROWS3, NCOLS3, NTHIK3,
+     &          TINDX3, NINDX3, SINDX3, LINDX3, WCNDX3, WRNDX3,
+     &          XINDX3, YINDX3, ZINDX3, DXNDX3, DYNDX3, VINDX3,
+     &          GDTYP3, VOLAT3, RONLY3,
+     &          BSIZE3, LDATE3, LTIME3, NDATE3, NTIME3, ILAST3,
+     &          VTYPE3,
+     &          ILCNT3, NLIST3, IFRST3, ILIST3, BEGRC3, ENDRC3,
      &          STDOUT, PN_MODE
 
         !!  character portion of current I/O API state
 
-        COMMON  / CSTATE3 /                                             &
+        COMMON  / CSTATE3 /
      &          EXECN3, SCNDSC, FLIST3, GDNAM3, VLIST3, UNITS3, VERSN3
 
         SAVE / BSTATE3 / , / CSTATE3 /

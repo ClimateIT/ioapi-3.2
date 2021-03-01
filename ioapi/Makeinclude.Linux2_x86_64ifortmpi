@@ -6,7 +6,7 @@
 AR   = ar
 CC   = mpicc
 CXX  = mpiCC
-FC   = mpif90 -auto -warn notruncated_source -Bstatic -static-intel
+FC   = mpif90 -auto -warn notruncated_source
 M4   = m4
 LINK = $(CC)
 
@@ -22,8 +22,8 @@ MFLAGS    = -traceback -xHost                                   # this-machine
 
 # OMPFLAGS  = -openmp      # for Intel compilers, version 15 or earlier
 # OMPLIBS   = -openmp
-OMPFLAGS  = -openmp -qopenmp
-OMPLIBS   = -openmp -qopenmp -qopenmp-link=static -shared_intel
+OMPFLAGS  = -qopenmp
+OMPLIBS   = -qopenmp
 
 COPTFLAGS = -O3 ${MFLAGS}
 FOPTFLAGS = -O3 -unroll -stack_temps -safe_cray_ptr \
@@ -37,7 +37,7 @@ ARCHFLAGS = \
  -DIOAPI_NO_STDOUT=1 \
  -DAVOID_FLUSH=1 -DBIT32=1
 PARFLAGS  =
-ARCHLIB   = -Bstatic
+ARCHLIB   =
 
 # M4DEFFILE = $(PVM_ROOT)/conf/$(PVM_ARCH).m4
 # PVMLIBS   = -L$(PVM_ROOT)/lib/$(PVM_ARCH) -lpvm3
